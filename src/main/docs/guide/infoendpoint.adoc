@@ -1,0 +1,11 @@
+____
+The info endpoint returns static information from the state of the application. The info exposed can be provided by any number of "info sources".
+____
+
+Enable the info endpoint:
+
+[source,yaml]
+.src/main/resources/application.yml
+----
+include::{sourceDir}/src/main/resources/application.yml[tag=info]
+----

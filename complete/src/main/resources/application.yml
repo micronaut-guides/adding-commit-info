@@ -1,0 +1,9 @@
+micronaut:
+    application:
+        name: example
+#tag::info[]
+endpoints:
+    info:
+        enabled: true
+        sensitive: false
+#end::info[]

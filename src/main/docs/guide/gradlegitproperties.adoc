@@ -1,0 +1,25 @@
+If a git.properties file is available on the classpath, the http://docs.micronaut.io/snapshot/api/io/micronaut/management/endpoint/info/source/GitInfoSource.html[GitInfoSource]
+will expose the values in that file under the git key. Generating of a `git.properties` file will need to be configured
+as part of your build; for example, you may choose to use the https://plugins.gradle.org/plugin/com.gorylenko.gradle-git-properties[Gradle Git Properties].
+
+Modify `build.gradle` file to add the Gradle plugin:
+
+[source,groovy]
+.build.gradle
+----
+buildscript {
+    repositories {
+        ...
+        ..
+    }
+    dependencies {
+    ..
+    .
+include::{sourceDir}/build.gradle[tag=classpath-gradle-git-properties]
+    }
+}
+...
+..
+.
+include::{sourceDir}/build.gradle[tag=apply-gradle-git-properties]
+----
