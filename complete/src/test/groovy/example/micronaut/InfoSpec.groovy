@@ -41,5 +41,4 @@ class InfoSpec extends Specification {
         json.git.commit.user
         json.git.branch
     }
-
 }
