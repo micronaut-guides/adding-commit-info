@@ -4,6 +4,6 @@ In this guide we are going to add git commit info to your Micronaut build artifa
 
 * Fast authoritative means of identifying what specific code is running in an environment
 
-* This solution doesn’t rely on external tracking mechanisms
+* This solution doesn't rely on external tracking mechanisms
 
 * Transparency and reproducibility when investigating issues

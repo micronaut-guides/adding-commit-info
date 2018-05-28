@@ -31,7 +31,6 @@ Create a http://spockframework.org[Spock] feature method to verify the behaviour
 .src/test/groovy/example/micronaut/InfoSpec.groovy
 ----
 include::{sourceDir}/src/test/groovy/example/micronaut/InfoSpec.groovy[]
-}
 ----
 
 <1> The AutoCleanup extension makes sure the `close()` method of an object (e.g. `EmbeddedServer`) is called each time a feature method is finished
