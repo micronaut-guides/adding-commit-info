@@ -1,6 +1,4 @@
-include::{commondir}/common-spockinjavaapp.adoc[]
-
-Create a test which verifies that when you do a GET request to `/info` you get a payload such as:
+Create a Junit test which verifies that when you do a GET request to `/info` you get a payload such as:
 
 [source, json]
 ----

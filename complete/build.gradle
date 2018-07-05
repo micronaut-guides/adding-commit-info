@@ -18,7 +18,7 @@ group "example"
 apply plugin:"io.spring.dependency-management"
 apply plugin:"com.github.johnrengelman.shadow"
 apply plugin:"application"
-apply plugin:"groovy"
+apply plugin:"java"
 apply plugin:"net.ltgt.apt-eclipse"
 apply plugin:"net.ltgt.apt-idea"
 //tag::apply-gradle-git-properties[]
@@ -51,11 +51,6 @@ dependencies {
     //tag::management[]
     compile "io.micronaut:management"
     //end::management[]
-
-    //tag::spock[]
-    testCompile "org.codehaus.groovy:groovy-all:2.4.15"
-    testCompile "org.spockframework:spock-core:1.1-groovy-2.4"
-    //end::spock[]
 }
 
 shadowJar {
