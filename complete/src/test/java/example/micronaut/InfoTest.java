@@ -20,10 +20,10 @@ public class InfoTest {
 
     @BeforeClass
     public static void setupServer() {
-        server = ApplicationContext.run(EmbeddedServer.class);
+        server = ApplicationContext.run(EmbeddedServer.class); // <1>
         client = server
                 .getApplicationContext()
-                .createBean(HttpClient.class, server.getURL());
+                .createBean(HttpClient.class, server.getURL()); // <2>
     }
 
     @AfterClass
@@ -39,13 +39,13 @@ public class InfoTest {
     @Test
     public void testGitComitInfoAppearsInJson() {
 
-        HttpRequest request = HttpRequest.GET("/info"); // <4>
+        HttpRequest request = HttpRequest.GET("/info"); // <3>
 
         HttpResponse<Map> rsp = client.toBlocking().exchange(request, Map.class);
 
         assertEquals(rsp.status().getCode(), 200);
 
-        Map json = rsp.body(); // <5>
+        Map json = rsp.body(); // <4>
 
         then:
         assertNotNull(json.get("git"));
