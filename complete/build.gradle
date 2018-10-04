@@ -39,17 +39,17 @@ dependencyManagement {
 
 dependencies {
     annotationProcessor "io.micronaut:inject-java"
-    compile "io.micronaut:http-client"
-    compile "io.micronaut:http-server-netty"
-    compile "io.micronaut:inject"
-    compile "io.micronaut:runtime"
+    implementation "io.micronaut:http-client"
+    implementation "io.micronaut:http-server-netty"
+    implementation "io.micronaut:inject"
+    implementation "io.micronaut:runtime"
     compileOnly "io.micronaut:inject-java"
-    runtime "ch.qos.logback:logback-classic:1.2.3"
-    testCompile "junit:junit:4.12"
-    testCompile "io.micronaut:inject-java"
+    runtimeOnly "ch.qos.logback:logback-classic:1.2.3"
+    testImplementation "junit:junit:4.12"
+    testImplementation "io.micronaut:inject-java"
 
     //tag::management[]
-    compile "io.micronaut:management"
+    implementation "io.micronaut:management"
     //end::management[]
 }
 
