@@ -43,7 +43,7 @@ public class InfoTest {
 
         HttpResponse<Map> rsp = client.toBlocking().exchange(request, Map.class);
 
-        assertEquals(rsp.status().getCode(), 200);
+        assertEquals(200, rsp.status().getCode());
 
         Map json = rsp.body(); // <4>
 
