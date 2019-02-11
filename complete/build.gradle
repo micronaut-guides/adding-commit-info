@@ -1,29 +1,18 @@
-buildscript {
-    repositories {
-        mavenCentral()
-        maven { url "https://plugins.gradle.org/m2/" }
-    }
-    dependencies {
-        classpath "com.github.jengelman.gradle.plugins:shadow:2.0.4"
-        classpath "io.spring.gradle:dependency-management-plugin:1.0.5.RELEASE"
-        classpath "net.ltgt.gradle:gradle-apt-plugin:0.15"
-//tag::classpath-gradle-git-properties[]
-        classpath "gradle.plugin.com.gorylenko.gradle-git-properties:gradle-git-properties:1.4.21"
-//end::classpath-gradle-git-properties[]
-    }
+plugins {
+    id "io.spring.dependency-management" version "1.0.6.RELEASE"
+    id "com.github.johnrengelman.shadow" version "4.0.2"
+    id "net.ltgt.apt-eclipse" version "0.18"
+    id "net.ltgt.apt-idea" version "0.18"
+    //tag::apply-gradle-git-properties[]
+    id "com.gorylenko.gradle-git-properties" version "2.0.0"
+    //end::apply-gradle-git-properties[]
 }
+
 version "0.1"
 group "example"
 
-apply plugin:"io.spring.dependency-management"
-apply plugin:"com.github.johnrengelman.shadow"
 apply plugin:"application"
 apply plugin:"java"
-apply plugin:"net.ltgt.apt-eclipse"
-apply plugin:"net.ltgt.apt-idea"
-//tag::apply-gradle-git-properties[]
-apply plugin: "com.gorylenko.gradle-git-properties"
-//end::apply-gradle-git-properties[]
 
 repositories {
     mavenLocal()

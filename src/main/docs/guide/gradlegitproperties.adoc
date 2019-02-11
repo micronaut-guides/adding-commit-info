@@ -7,19 +7,10 @@ Modify `build.gradle` file to add the Gradle plugin:
 [source,groovy]
 .build.gradle
 ----
-buildscript {
-    repositories {
-        ...
-        ..
-    }
-    dependencies {
+plugins {
     ..
     .
-include::{sourceDir}/build.gradle[tag=classpath-gradle-git-properties]
+include::{sourceDir}/build.gradle[tag=apply-gradle-git-properties]
     }
 }
-...
-..
-.
-include::{sourceDir}/build.gradle[tag=apply-gradle-git-properties]
 ----
