@@ -11,6 +11,5 @@ plugins {
     ..
     .
 include::{sourceDir}/build.gradle[tag=apply-gradle-git-properties]
-    }
 }
 ----

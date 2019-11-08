@@ -30,7 +30,7 @@ Create a JUnit test to verify the behaviour:
 ----
 include::{sourceDir}/src/test/java/example/micronaut/InfoTest.java[]
 ----
-<1> To run the application from a unit test you can use the http://docs.micronaut.io/snapshot/api/io/micronaut/runtime/server/EmbeddedServer.html[EmbeddedServer] interface
-<2> Register an `HttpClient` bean in the application context and point it to the embedded server URL. The `EmbeddedServer` interface provides the URL of the server under test which runs on a random port.
+<1> Annotate the class with `@MicronatTest` to let Micronaut starts the embedder server and inject the beans. More info: https://micronaut-projects.github.io/micronaut-test/latest/guide/index.html[https://micronaut-projects.github.io/micronaut-test/latest/guide/index.html].
+<2> Inject the `HttpClient` bean in the application context.
 <3> Creating HTTP Requests is easy thanks to Micronaut's fluid API.
 <4> Use `.body()` to retrieve the parsed payload.
