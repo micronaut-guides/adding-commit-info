@@ -1,9 +1,9 @@
 micronaut:
-    application:
-        name: example
+  application:
+    name: example
 #tag::info[]
 endpoints:
-    info:
-        enabled: true
-        sensitive: false
+  info:
+    enabled: true
+    sensitive: false
 #end::info[]
