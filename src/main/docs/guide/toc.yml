@@ -11,3 +11,8 @@ writingTheApp:
   testingTheApp: Testing the Application
 runningTheApp:
   title: Running the Application
+graal:
+  title: Generate a Micronaut app's Native Image with GraalVM
+  graalchanges: Micronaut + GraalVM changes
+  graalnativeimage: Native Image generation
+  graaldocker: Native Image generation with Docke
