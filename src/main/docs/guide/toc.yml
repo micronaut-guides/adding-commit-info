@@ -2,12 +2,12 @@ gettingStarted:
   title: Getting Started
   requirements: What you will need
   solution: Solution
-writingTheApp: Writing the App
-management: Management
-infoendpoint: Info endpoint
-gradlegitproperties: Gradle Git Properties Plugin
-tests: Test Info endpoint
-testingTheApp:
-  title: Testing the Application
+writingTheApp:
+  title: Writing the App
+  management: Management
+  infoendpoint: Info endpoint
+  gradlegitproperties: Gradle Git Properties Plugin
+  tests: Test Info endpoint
+  testingTheApp: Testing the Application
 runningTheApp:
   title: Running the Application
