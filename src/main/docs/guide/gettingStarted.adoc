@@ -1,3 +1,5 @@
+include::{commondir}/common-micronautonex.adoc[]
+
 In this guide we are going to add git commit info to your Micronaut build artifacts and running application. There are many benefits of keeping your commit info handy:
 
 * Commit info is encapsulated within the built artifacts
